@@ -2,6 +2,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import java.time.DateTimeException;
 
+@WebServlet
 public class TimezoneValidateFilter {
 
     protected boolean checkV(HttpServletRequest req) {
