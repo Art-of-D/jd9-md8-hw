@@ -1,8 +1,11 @@
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import java.time.DateTimeException;
 
-public class TimezoneValidateFilter {
+@WebServlet
+public class TimezoneValidateFilter extends HttpServlet{
 
     protected boolean checkV(HttpServletRequest req) {
         try {
